@@ -15,7 +15,7 @@ app.use(cors())
 
 const PORT = process.env.PORT || 3000
 
-app.use('/static', express.static('public/dist'))
+app.use('/static', express.static('public'))
 
 app.use('/api', router)
 
