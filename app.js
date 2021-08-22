@@ -5,6 +5,8 @@ const cors = require('cors')
 const errorHandle = require('./middleware/error-handler')
 const router = require('./router')
 
+require('./model')
+
 const app = express()
 
 app.use(morgan('dev'))
@@ -18,5 +20,5 @@ app.use('/api', router)
 app.use(errorHandle())
 
 app.listen(PORT, () => {
-    console.log(`Example app listening at http://localhost:${PORT}`)
+    console.log(`Shicixuan app listening at http://localhost:${PORT}`)
 })
