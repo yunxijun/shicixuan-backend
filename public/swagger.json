@@ -1,0 +1,114 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "这是诗词轩web项目的后端接口文档",
+    "version": "1.0.0",
+    "title": "诗词轩",
+    "termsOfService": "http://localhost:3000/static/index.html",
+    "contact": {
+      "email": "weijsun@163.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://mit-license.org/"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "caocaoshiji",
+      "description": "曹操诗集"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/caocaoshiji": {
+      "get": {
+        "tags": [
+          "caocaoshiji"
+        ],
+        "summary": "获取曹操诗集列表",
+        "description": "获取曹操诗集列表",
+        "operationId": "getCaocaoshiji",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "请求成功",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "poems": {
+                  "type": "object",
+                  "properties": {
+                    "_id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "author": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "poemsCount": {
+                      "type": "integer",
+                      "format": "int32"
+                    },
+                    "paragraphs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "meta1": {
+                  "$ref": "#/definitions/baseMeta"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "资源未找到",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "meta": {
+                  "$ref": "#/definitions/baseMeta"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "baseMeta": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

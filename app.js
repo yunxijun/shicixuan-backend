@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3000
 
 app.use('/static', express.static('public'))
 
-app.use('/api', router)
+app.use('/api/v1', router)
 
 app.use(errorHandle())
 
