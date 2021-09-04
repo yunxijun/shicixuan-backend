@@ -4,7 +4,7 @@
     "description": "这是诗词轩web项目的后端接口文档",
     "version": "1.0.0",
     "title": "诗词轩",
-    "termsOfService": "http://localhost:3000/static/index.html",
+    "termsOfService": "http://localhost:4000/static/index.html",
     "contact": {
       "email": "weijsun@163.com"
     },
@@ -13,7 +13,7 @@
       "url": "https://mit-license.org/"
     }
   },
-  "host": "localhost:3000",
+  "host": "localhost:4000",
   "basePath": "/api/v1",
   "tags": [
     {
