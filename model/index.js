@@ -23,4 +23,5 @@ db.once('open', function () {
 // 组织导出模型类
 module.exports = {
     CaocaoShiJi:mongoose.model('CaocaoshiJi', require('./caocaoshiji')),
+    Chuci:mongoose.model('Chuci', require('./chuci'))
 }

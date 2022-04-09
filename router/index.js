@@ -4,5 +4,6 @@ const router = express.Router()
 // 获取曹操诗集列表
 
 router.get('/caocaoshiji', require('./caocaoshiji'))
+router.get('/chuci', require('./chuci'))
 
 module.exports = router

@@ -4,7 +4,7 @@ const {CaocaoShiJi} = require('../../model')
 
 // const db = getDb()
 
-let j = require('./caocao.json')
+let j = require('./chuci.json')
 
 
 for (let index = 0; index < j.length; index++) {

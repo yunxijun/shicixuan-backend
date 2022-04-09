@@ -1,11 +1,11 @@
-const {CaocaoShiJi} = require('../model')
+const {Chuci} = require('../model')
 
-exports.getCaocaoshijiList = async (req, res, next) => {
+exports.getChuciList = async (req, res, next) => {
     try {
 
         const {skip, limit} = req.query 
-        const poemsCount = await CaocaoShiJi.countDocuments()
-        const poems = await CaocaoShiJi.find().skip(Number.parseInt(skip)).limit(Number.parseInt(limit))
+        const poemsCount = await Chuci.countDocuments()
+        const poems = await Chuci.find().skip(Number.parseInt(skip)).limit(Number.parseInt(limit))
         // 处理请求
         return res.status(200).json({
             poems,
