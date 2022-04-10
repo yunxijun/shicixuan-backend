@@ -26,4 +26,7 @@ module.exports = {
     Chuci:mongoose.model('Chuci', require('./chuci')),
     Shijing:mongoose.model('Shijing', require('./shijing')),
     Lunyu:mongoose.model('Lunyu', require('./lunyu')),
+    Mengzi:mongoose.model('Mengzi', require('./mengzi')),
+    Daxue:mongoose.model('Daxue', require('./daxue')),
+    Zhongyong:mongoose.model('Zhongyong', require('./zhongyong')),
 }

@@ -7,5 +7,8 @@ router.get('/caocaoshiji', require('./caocaoshiji'))
 router.get('/chuci', require('./chuci'))
 router.get('/shijing', require('./shijing'))
 router.get('/lunyu', require('./lunyu'))
+router.get('/mengzi', require('./mengzi'))
+router.get('/daxue', require('./daxue'))
+router.get('/zhongyong', require('./zhongyong'))
 
 module.exports = router
