@@ -24,5 +24,6 @@ db.once('open', function () {
 module.exports = {
     CaocaoShiJi:mongoose.model('CaocaoshiJi', require('./caocaoshiji')),
     Chuci:mongoose.model('Chuci', require('./chuci')),
-    Shijing:mongoose.model('Shijing', require('./shijing'))
+    Shijing:mongoose.model('Shijing', require('./shijing')),
+    Lunyu:mongoose.model('Lunyu', require('./lunyu')),
 }

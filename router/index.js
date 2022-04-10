@@ -6,5 +6,6 @@ const router = express.Router()
 router.get('/caocaoshiji', require('./caocaoshiji'))
 router.get('/chuci', require('./chuci'))
 router.get('/shijing', require('./shijing'))
+router.get('/lunyu', require('./lunyu'))
 
 module.exports = router
