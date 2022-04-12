@@ -29,4 +29,5 @@ module.exports = {
     Mengzi:mongoose.model('Mengzi', require('./mengzi')),
     Daxue:mongoose.model('Daxue', require('./daxue')),
     Zhongyong:mongoose.model('Zhongyong', require('./zhongyong')),
+    Tangshi:mongoose.model('Tangshi', require('./tangshi')),
 }
