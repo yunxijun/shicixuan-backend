@@ -11,5 +11,6 @@ router.get('/mengzi', require('./mengzi'))
 router.get('/daxue', require('./daxue'))
 router.get('/zhongyong', require('./zhongyong'))
 router.get('/tangshi', require('./tangshi'))
+router.get('/songci', require('./songci'))
 
 module.exports = router
