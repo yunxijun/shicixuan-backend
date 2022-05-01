@@ -31,4 +31,7 @@ module.exports = {
     Zhongyong:mongoose.model('Zhongyong', require('./zhongyong')),
     Tangshi:mongoose.model('Tangshi', require('./tangshi')),
     Songci:mongoose.model('Songci', require('./songci')),
+    Songshi:mongoose.model('Songshi', require('./songshi')),
+    Huajianji:mongoose.model('Huajianji', require('./huajianji')),
+    Nantang:mongoose.model('Nantang', require('./nantang'))
 }

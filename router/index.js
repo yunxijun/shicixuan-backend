@@ -12,5 +12,8 @@ router.get('/daxue', require('./daxue'))
 router.get('/zhongyong', require('./zhongyong'))
 router.get('/tangshi', require('./tangshi'))
 router.get('/songci', require('./songci'))
+router.get('/huajianji', require('./huajianji'))
+router.get('/songshi', require('./songshi'))
+router.get('/nantang', require('./nantang'))
 
 module.exports = router
